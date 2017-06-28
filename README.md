@@ -1,6 +1,6 @@
 # SIGNET
 
-Code for "Simultaneous identification of disease genes and responsive tissues via Bayesian integration of multiple regulatory networks"
+Code for "Simultaneous inference of phenotype-associated genes and relevant tissues from GWAS data via Bayesian integration of multiple tissue-specific gene networks"
 
 ![Schematic diagram of SIGNET](https://github.com/wmmthu/SIGNET/raw/master/diagram.jpg)
 
