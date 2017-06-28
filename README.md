@@ -2,7 +2,7 @@
 
 Code for "Simultaneous identification of disease genes and responsive tissues via Bayesian integration of multiple regulatory networks"
 
-![Schematic diagram of SIGNET](https://github.com/wmmthu/SIGNET/raw/master/signet.jpg)
+![Schematic diagram of SIGNET](https://github.com/wmmthu/SIGNET/raw/master/diagram.jpg)
 
 Requirements:
 ```
