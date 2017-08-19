@@ -24,7 +24,7 @@ Notice that only unzipped network files are allowed to put into this folder.
 
 3) Use the function "SIGNET" from SIGNET.R to perform inference.
 
-command    : result <- SIGNET(p_value_file, network_dir, iters = 20000, remove_HLA=TRUE, edge_threshold=0.01)  
+	command    : result <- SIGNET(p_value_file, network_dir, iters = 20000, remove_HLA=TRUE, edge_threshold=0)  
 parameters :  
 p_value_file   : gene-level p-values file generated in step (1)  
 network_dir    : the folder path for gene networks obtained in step (2)  
