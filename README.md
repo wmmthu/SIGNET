@@ -5,7 +5,7 @@ Code for "Simultaneous inference of phenotype-associated genes and relevant tiss
 ![Schematic diagram of SIGNET](https://github.com/wmmthu/SIGNET/raw/master/diagram.jpg)
 
 Requirements:
-```
+
 1) R package "Matrix" (https://cran.r-project.org/web/packages/Matrix/)
 This package is used to support sparse matrix, which is used when loading gene networks (highly sparse).
 
@@ -14,9 +14,9 @@ This package is used to support efficient implementation of Gibbs sampling
 
 3) R package "BayesLogit" (https://cran.r-project.org/web/packages/BayesLogit/index.html)
 This package provides an efficient sampler for Polya-Gamma random variable
-```
+
 Usage : 
-```
+
 (1) Compute gene-level p-values with PASCAL (http://www2.unil.ch/cbg/index.php?title=Pascal). 
 
 The precomputed PASCAL files for 14 phenotypes can be found in the "example" folder.
@@ -39,6 +39,6 @@ result$network.name : the names for gene networks, obtained as file names for th
 result$data         : a dataframe , each row is a gene and three columns denote gene names ('Gene'), gene-level p-values ('pval'), gene-level local FDR ('localFDR')  
 result$para.list    : a dataframe containing parameters of each MCMC sampling step  
 result$network.included.prob : the posterior includsion probabilities for these gene networks  
-```
+
 
 If you have any questions, please contact me (Mengmeng Wu, wmm15@mails.tsinghua.edu.cn).
