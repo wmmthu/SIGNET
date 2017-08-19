@@ -17,7 +17,7 @@ This package provides an efficient sampler for Polya-Gamma random variable
 ```
 Usage : 
 ```
-(1) Compute gene-level p-values with PASCAL (http://www2.unil.ch/cbg/index.php?title=Pascal)
+(1) Compute gene-level p-values with PASCAL (http://www2.unil.ch/cbg/index.php?title=Pascal). The precomputed PASCAL files for 14 phenotypes can be found in the "example" folder.
 
 (2) Download tissue-specific gene networks (or other alternative context-specific gene networks), e.g. regulatorycircuits (http://regulatorycircuits.org/) and put these networks into one folder. 
 Notice that only unzipped network files are allowed to put into this folder.
