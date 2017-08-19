@@ -4,7 +4,7 @@ Code for "Simultaneous inference of phenotype-associated genes and relevant tiss
 
 ![Schematic diagram of SIGNET](https://github.com/wmmthu/SIGNET/raw/master/diagram.jpg)
 
-Requirements:
+## Requirements:
 
 1) R package "Matrix" (https://cran.r-project.org/web/packages/Matrix/)
 This package is used to support sparse matrix, which is used when loading gene networks (highly sparse).
@@ -15,16 +15,14 @@ This package is used to support efficient implementation of Gibbs sampling
 3) R package "BayesLogit" (https://cran.r-project.org/web/packages/BayesLogit/index.html)
 This package provides an efficient sampler for Polya-Gamma random variable
 
-Usage : 
+## Usage : 
 
-(1) Compute gene-level p-values with PASCAL (http://www2.unil.ch/cbg/index.php?title=Pascal). 
+1) Compute gene-level p-values with PASCAL (http://www2.unil.ch/cbg/index.php?title=Pascal). The precomputed PASCAL files for 14 phenotypes can be found in the "example" folder.
 
-The precomputed PASCAL files for 14 phenotypes can be found in the "example" folder.
-
-(2) Download tissue-specific gene networks (or other alternative context-specific gene networks), e.g. regulatorycircuits (http://regulatorycircuits.org/) and put these networks into one folder. 
+2) Download tissue-specific gene networks (or other alternative context-specific gene networks), e.g. regulatorycircuits (http://regulatorycircuits.org/) and put these networks into one folder. 
 Notice that only unzipped network files are allowed to put into this folder.
 
-(3) Use the function "SIGNET" from SIGNET.R to perform inference.
+3) Use the function "SIGNET" from SIGNET.R to perform inference.
 
 command    : result <- SIGNET(p_value_file, network_dir, iters = 20000, remove_HLA=TRUE, edge_threshold=0.01)  
 parameters :  
