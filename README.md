@@ -24,18 +24,18 @@ Notice that only unzipped network files are allowed to put into this folder.
 
 3) Use the function "SIGNET" from SIGNET.R to perform inference.
 
-	command    : result <- SIGNET(p_value_file, network_dir, iters = 20000, remove_HLA=TRUE, edge_threshold=0)  
-	parameters :  
+	command        : result <- SIGNET(p_value_file, network_dir, iters = 20000, remove_HLA=TRUE, edge_threshold=0)  
+	parameters     :  
 	p_value_file   : gene-level p-values file generated in step (1)  
 	network_dir    : the folder path for gene networks obtained in step (2)  
 	iters          : the number of iterations for performing MCMC sampling  
 	remove_HLA     : whether or not to remove genes located at HLA region  
 	edge_threshold : the threshold for remove noisy edges in gene networks  
 
-	output : a list of result with components as  
-	result$network.name : the names for gene networks, obtained as file names for these networks  
-	result$data         : a dataframe , each row is a gene and three columns denote gene names ('Gene'), gene-level p-values ('pval'), gene-level local FDR ('localFDR')  
-	result$para.list    : a dataframe containing parameters of each MCMC sampling step  
+	output                       : a list of result with components as  
+	result$network.name          : the names for gene networks, obtained as file names for these networks  
+	result$data                  : a dataframe , each row is a gene and three columns denote gene names ('Gene'), gene-level p-values ('pval'), gene-level local FDR ('localFDR')  
+	result$para.list             : a dataframe containing parameters of each MCMC sampling step  
 	result$network.included.prob : the posterior includsion probabilities for these gene networks  
 
 
